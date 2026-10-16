@@ -1,11 +1,13 @@
 header {
-  width: 100%;
-  height: 138px;
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height);
   color: var(--text-primary-color);
   background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 38px 48px;
 }
 
 .logo {
@@ -13,5 +15,12 @@ header {
   display: inline-block;
   width: 68px;
   height: 64px;
-  margin: 37px 0 37px 40px;
+}
+
+nav {
+  display: none;
+}
+
+.menu-container {
+  margin-top: 24px;
 }

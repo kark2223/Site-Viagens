@@ -38,14 +38,54 @@ input[type="checkbox"]:checked ~ nav {
 
 .menu-links {
   list-style: none;
-  font-family: var(--font-family);
 }
 
 .menu-links li a {
   color: var(--text-primary-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .menu-links li {
   margin-bottom: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .menu-container {
+    margin-top: 0;
+  }
+
+  .menu-container label {
+    display: none;
+  }
+
+  .menu-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .menu-links li {
+    margin: 0;
+  }
+
+  .menu-container nav {
+    display: block;
+    width: 467px;
+    margin-top: 0;
+  }
 }

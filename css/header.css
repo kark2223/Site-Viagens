@@ -18,6 +18,14 @@ header {
   height: 64px;
 }
 
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
 nav {
   display: none;
 }
@@ -87,5 +95,42 @@ input[type="checkbox"]:checked ~ nav {
     display: block;
     width: 467px;
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 200px;
+    height: 64px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+
+  header {
+    padding: 38px 120px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 38px 225px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  header {
+    padding: 38px 300px;
+  }
+}
+
+@media screen and (min-width: 4096px) {
+  header {
+    padding: 38px 480px;
   }
 }

@@ -1,0 +1,142 @@
+header {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--text-primary-color);
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 38px 48px;
+  position: relative;
+}
+
+.logo {
+  text-decoration: none;
+  display: inline-block;
+  width: 68px;
+  height: 64px;
+}
+
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--tertiary-color);
+}
+
+.menu-container {
+  margin-top: 24px;
+}
+
+.menu-links {
+  list-style: none;
+}
+
+.menu-links li a {
+  color: var(--text-primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.menu-links li {
+  margin-bottom: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: block;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .menu-container {
+    margin-top: 0;
+  }
+
+  .menu-container label {
+    display: none;
+  }
+
+  .menu-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu-links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .menu-links li {
+    margin: 0;
+  }
+
+  .menu-container nav {
+    display: block;
+    width: 467px;
+    margin-top: 0;
+  }
+
+  .menu-links li a:hover {
+    color: var(--button-primary-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    width: 200px;
+    height: 64px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
+  }
+
+  header {
+    padding: 38px 120px;
+  }
+
+  .
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 38px 225px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  header {
+    padding: 38px 300px;
+  }
+}
+
+@media screen and (min-width: 4096px) {
+  header {
+    padding: 38px 480px;
+  }
+}

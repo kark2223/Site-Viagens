@@ -1,3 +1,31 @@
+/* CSS RESET */
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-VariableFont_wght.ttf) format("woff2");
@@ -13,8 +41,8 @@
   --button-primary-color: #8f0101;
   --button-secondary-color: #b81515;
 
-  --text-primary-color: #222;
-  --text-secondary-color: #fff;
+  --text-primary-color: #fff;
+  --text-secondary-color: #000;
 
   --font-family: "Montserrat", sans-serif;
   --font-size: 16px;

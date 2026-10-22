@@ -26,6 +26,12 @@ button {
 body {
   font-family: "Montserrat", sans-serif;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf) format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --primary-color: #fff;
@@ -39,10 +45,32 @@ body {
   --text-secondary-color: #000;
 
   --font-family: "Montserrat", sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+
+  --titles-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
 }
 
 h1 {
-  font-size: 2rem;
-  color: var(--text-primary-color);
-  margin-bottom: 1rem;
+  font-weight: var(--titles-weight);
+  font-family: var(--font-family);
+}
+
+/* CSS RESET */
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

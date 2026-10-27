@@ -1,6 +1,5 @@
 header {
   font-family: var(--font-family);
-  font-size: var(--font-size);
   line-height: var(--line-height);
   color: var(--text-primary-color);
   background-color: var(--tertiary-color);
@@ -119,8 +118,6 @@ input[type="checkbox"]:checked ~ nav {
   header {
     padding: 38px 120px;
   }
-
-  .
 }
 
 @media screen and (min-width: 1920px) {

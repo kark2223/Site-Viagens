@@ -2,6 +2,8 @@
 body,
 img,
 h1,
+h2,
+h3,
 p,
 fieldset,
 legend,
@@ -27,6 +29,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+
 :root {
   --primary-color: #fff;
   --secondary-color: #f5f5f5;
@@ -35,8 +38,8 @@ body {
   --button-primary-color: #8f0101;
   --button-secondary-color: #b81515;
 
-  --text-primary-color: #fff;
-  --text-secondary-color: #000;
+  --text-primary-color: #222;
+  --text-secondary-color: #fff;
 
   --title-weight: 700;
   --text-weight: 400;
@@ -52,5 +55,5 @@ h1 {
   font-weight: var(--title-weight);
   font-size: 32px;
   color: var(--text-primary-color);
-  margin-bottom: 1rem;
+
 }

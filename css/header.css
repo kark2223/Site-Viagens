@@ -48,7 +48,7 @@ input[type="checkbox"]:checked ~ nav {
 }
 
 .menu-links li a {
-  color: var(--text-primary-color);
+  color: var(--text-secondary-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 24px;

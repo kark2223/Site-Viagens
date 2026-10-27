@@ -1,9 +1,10 @@
 .hero-img {
-  height: 700px;
+  height: 400px;
   width: 100%;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero h2 {
@@ -13,6 +14,7 @@
   margin: 0;
   font-size: 24px;
   line-height: var(--line-height);
+  color: var(--text-primary-color);
 }
 
 @media (min-width: 768px) {

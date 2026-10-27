@@ -38,11 +38,19 @@ body {
   --text-primary-color: #fff;
   --text-secondary-color: #000;
 
+  --title-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
+
+  --font-size: 32px;
+  --line-height: 1.5;
+
   --font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-  font-size: 2rem;
+  font-weight: var(--title-weight);
+  font-size: 32px;
   color: var(--text-primary-color);
   margin-bottom: 1rem;
 }

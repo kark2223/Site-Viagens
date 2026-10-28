@@ -34,6 +34,8 @@
   display: block;
   position: static;
   background-color: transparent;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .card header p {
@@ -44,11 +46,36 @@
 .card header h3 {
   font-weight: var(--title-weight);
   font-size: 40px;
-  margin-top: 8px;
+  margin-top: 8px 0 0;
 }
 
-.card header h3 span {
+.card header span h3 {
   font-size: 32px;
-  margin-top: 24px;
   display: inline-block;
+  margin-top: 24px;
+}
+
+.button {
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  background-color: var(--button-secondary-color);
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .button:hover {
+    background-color: var(--button-primary-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--button-primary-color);
+  }
 }

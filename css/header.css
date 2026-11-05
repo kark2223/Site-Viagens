@@ -1,6 +1,5 @@
 header {
   font-family: var(--font-family);
-  line-height: var(--line-height);
   background-color: var(--tertiary-color);
   display: flex;
   flex-direction: row;

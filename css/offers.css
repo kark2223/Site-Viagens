@@ -1,8 +1,9 @@
-.section-title h2 {
-  font-weight: var(--title-weight);
-  font-size: 28px;
-  text-align: center;
-  color: var(--text-primary-color);
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .section-title hr {
@@ -13,10 +14,11 @@
   margin: 16px auto 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .section-title h2 {
-    font-size: 32px;
-  }
+.section-title h2 {
+  font-weight: var(--title-weight);
+  font-size: 28px;
+  text-align: center;
+  color: var(--text-primary-color);
 }
 
 .card {
@@ -28,12 +30,16 @@
   border-radius: 16px;
   padding: 24px 16px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .card header {
   display: block;
   position: static;
   background-color: transparent;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .card header p {
@@ -44,11 +50,99 @@
 .card header h3 {
   font-weight: var(--title-weight);
   font-size: 40px;
-  margin-top: 8px;
+  margin: 8px 0 0;
 }
 
 .card header h3 span {
   font-size: 32px;
+  display: block;
   margin-top: 24px;
-  display: inline-block;
+  margin-inline: auto;
+}
+
+.card footer {
+  margin-top: auto;
+  text-align: center;
+  align-self: center;
+}
+
+.detalhes {
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  background-color: var(--button-secondary-color);
+  border-radius: 16px;
+  display: block;
+  text-decoration: none;
+  line-height: 64px;
+}
+
+.card.japao {
+  background-image: url("../img/bg-card-japao.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card.san-andreas {
+  background-image: url("../img/bg-card-san-andreas.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card.paraiba {
+  background-image: url("../img/bg-card-paraiba.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card.manaus {
+  background-image: url("../img/bg-card-manaus.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .button:hover {
+    background-color: var(--button-primary-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 420px;
+    height: 308px;
+  }
+
+  .card header h3 {
+    font-size: 48px;
+  }
+
+  .card header h3 span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 588px;
+    height: 308px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
+  }
 }
